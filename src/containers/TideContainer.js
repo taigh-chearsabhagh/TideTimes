@@ -1,4 +1,6 @@
 import React from 'react';
+import TideSelector from '../components/TideSelector';
+import TideDetail from '../components/TideDetail';
 
 class TideContainer extends React.Component {
   constructor(props){
