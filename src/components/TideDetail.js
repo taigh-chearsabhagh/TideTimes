@@ -5,6 +5,10 @@ const TideDetail = ({tide}) => {
 
   return (
     <div className="tide-detail">
-    <h3>{tide}
+    <h3>{tide.name}</h3>
+    <p>{tide.id}</p>
+    <p>{tide.country}</p>
+    </div>
   )
 }
+export default TideDetail;

@@ -15,8 +15,9 @@ class TideContainer extends React.Component {
     method: 'GET',
     headers: {
       'Ocp-Apim-Subscription-Key': process.env.REACT_APP_TIDE_API_KEY
+      // above line might need {} pr "{}" around the value
     })
-  
+
     .then(response => response.json())
     .then(data => this.setState({tides: data}))
   }

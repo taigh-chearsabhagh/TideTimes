@@ -4,7 +4,7 @@ const TideSelector = (props) => {
 
   const options = props.tides.map((tide, index) => {
     return (
-      <option value={index} key={index}>{tide.PROPERTY}</option>
+      <option value={index} key={index}>{tide.name}</option>
     )
   })
   function handleChange(event){
